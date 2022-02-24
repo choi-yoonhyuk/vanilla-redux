@@ -6,8 +6,6 @@ function Detail({ toDos }) {
   const myId = useParams().id;
   const toDo = toDos.find((toDo) => toDo.id === parseInt(myId));
 
-  console.log(toDo);
-
   return (
     <>
       {toDo?.text}
